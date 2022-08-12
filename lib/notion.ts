@@ -1,6 +1,7 @@
-import { Client } from '@notionhq/client'
+// import { Client } from '@notionhq/client'
 import { ListBlockChildrenResponse } from '@notionhq/client/build/src/api-endpoints'
 
+const { Client } = require("@notionhq/client")
 const notion = new Client({ auth: process.env.NOTION_KEY })
 const databaseId =
   process.env.NOTION_DATABASE_ID || '0aa1040a197f455b95388d5fc64ba3ff'
